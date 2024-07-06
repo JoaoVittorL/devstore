@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="PT-BR">
-      <body className={inter.variable}>{children}</body>
+    <html className={inter.variable} lang="PT-BR">
+      <body className="bg-zinc-950 text-zinc-50 antialiased">{children}</body>
     </html>
   )
 }
