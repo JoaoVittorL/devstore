@@ -26,7 +26,7 @@ export default async function Home() {
       >
         <Image
           className="group-hover:scale-105 transition-transform duration-500"
-          src={'/moletom-ai-side.png'}
+          src={'/camiseta-dowhile-2022.png'}
           width={920}
           height={920}
           quality={100}
@@ -56,7 +56,7 @@ export default async function Home() {
               width={920}
               height={920}
               quality={100}
-              alt="Imagem principal do site"
+              alt=""
             />
             <div className="absolute bottom-10 right-10 h-12 flex items-center gap-2 max-w-[280px] rounded-full border-2 border-zinc-500 bg-black/60 p-1 pl-5">
               <span className="text-sm  truncate">{product.title}</span>

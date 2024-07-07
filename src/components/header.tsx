@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { Search, ShoppingBag } from 'lucide-react'
 import Image from 'next/image'
+import CardWidget from './cart-widget'
+import SearchForm from './search-form'
 
 const Header = () => {
   return (
@@ -9,19 +10,10 @@ const Header = () => {
         <Link href={'/'} className="text-2xl font-extrabold text-white">
           devstore
         </Link>
-        <form className="flex w-[320px] items-center gap-3 rounded-full bg-zinc-900 py-5 px-3 ring-zinc-700">
-          <Search className="h-5 w-5 text-zinc-500" />
-          <input
-            placeholder="Buscar produtos..."
-            className="flex-1 bg-transparent text-sm outline-none placeholder:text-zinc-500"
-          ></input>
-        </form>
+        <SearchForm />
       </div>
       <div className="flex items-center gap-4">
-        <div className="flex items-center gap-2">
-          <ShoppingBag className="h-4 w-4 text-zinc-500" />
-          <span className="text-sm text-zinc-500">Cart (0)</span>
-        </div>
+        <CardWidget />
         <div className="w-px h-4 bg-zinc-700" />
         <Link href={'/'} className="flex items-center gap-2 hover:underline">
           <span className="text-sm text-zinc-500">Account</span>
